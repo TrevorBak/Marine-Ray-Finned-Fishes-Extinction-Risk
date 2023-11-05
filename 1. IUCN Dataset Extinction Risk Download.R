@@ -50,7 +50,11 @@ Actinopterygii <- Actinopterygii %>% filter(duplicated(scientific_name) == FALSE
 
 #CSV that I import was downloaded by requesting a copy of the database here: https://www.marinespecies.org/documents.php
 
-
+#*note that WoRMs csv is too large to upload and is not needed - originally
+#*we were using WoRMs to look at marine invertebrates before changing the 
+#*focus of the project. If you want to use WoRMs request a copy, otherwise
+#*can join Actinopterygii with Fishbase and use the Fishbase marine column to filter
+#*for marine only species.
 WORMS <- read.csv("WoRMs.csv")
 
 #Filter WORMS subset for species only in animal kingdom, documented at species level, and accepted taxonomy
